@@ -2,6 +2,7 @@
 
 public class PlayerCollision : MonoBehaviour
 {
+    public PlayerMovement movement;
     void OnCollisionEnter(Collision collisionInfo)
     {
         // Debug.Log(collisionInfo.collider.name);
@@ -10,6 +11,7 @@ public class PlayerCollision : MonoBehaviour
         if(collisionInfo.collider.tag == "obstacle")
         {
             Debug.Log("You hit Obstacle");
+            movement.enabled = false;
         }
     }
 }
