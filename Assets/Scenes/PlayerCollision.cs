@@ -11,7 +11,7 @@ public class PlayerCollision : MonoBehaviour
         if(collisionInfo.collider.tag == "obstacle")
         {
             Debug.Log("You hit Obstacle");
-            movement.enabled = false;
+            // movement.enabled = false;
         }
     }
 }

@@ -3,8 +3,8 @@
 public class PlayerMovement : MonoBehaviour
 {
     public Rigidbody rb;
-    public float zForce = 500;
-    public float xForce = 500;
+    public float zForce = 2000;
+    public float xForce = 1000;
 
     // Start is called before the first frame update
     void Start()
@@ -20,11 +20,11 @@ public class PlayerMovement : MonoBehaviour
         rb.AddForce(0, 0, zForce * Time.deltaTime); // Time.deltaTime to compensate for frame rate
         if(Input.GetKey("d"))
         {
-            rb.AddForce(xForce * Time.deltaTime, 0, 0);
+            rb.AddForce(xForce * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
         }
         else if(Input.GetKey("a"))
         {
-            rb.AddForce(-xForce * Time.deltaTime, 0, 0);
+            rb.AddForce(-xForce * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
         }
     }
 }
