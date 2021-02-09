@@ -8,7 +8,7 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         Debug.Log("Player Movement Start");
-        rb.useGravity = false; // Turn off gravity
+        // rb.useGravity = false; // Turn off gravity
     }
 
     // Update is called once per frame
