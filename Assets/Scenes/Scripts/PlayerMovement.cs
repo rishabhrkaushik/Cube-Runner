@@ -11,7 +11,6 @@ public class PlayerMovement : MonoBehaviour
     {
         Debug.Log("Player Movement Start");
         // rb.useGravity = false; // Turn off gravity
-
     }
 
     // Update is called once per frame
@@ -25,6 +24,11 @@ public class PlayerMovement : MonoBehaviour
         else if(Input.GetKey("a"))
         {
             rb.AddForce(-xForce * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
+        }
+
+        if(rb.position.y < -1f)
+        {
+            FindObjectOfType<GameManager>().EndGame();
         }
     }
 }
