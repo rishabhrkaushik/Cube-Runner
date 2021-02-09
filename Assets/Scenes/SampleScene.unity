@@ -338,6 +338,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 435079225}
+  zForce: 500
+  xForce: 500
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
