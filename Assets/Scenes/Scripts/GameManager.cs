@@ -8,6 +8,9 @@ public class GameManager : MonoBehaviour
     public bool gameOver = false;
     public float restartDelay = 5f;
     public Score score;
+
+    public Animator levelCompleteAnimator;
+
     public void EndGame()
     {
         if(gameOver == false)
@@ -29,5 +32,6 @@ public class GameManager : MonoBehaviour
     {
         Debug.Log("Level Complete");
         completeLevelUI.SetActive(true);
+        levelCompleteAnimator.SetTrigger("LevelCompleteTrigger");
     }
 }
