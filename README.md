@@ -14,7 +14,7 @@ Explored concepts like
 
 Animation tutorial followed from "[Studica blog post](https://www.studica.com/blog/unity-tutorial-animator-controllers)"
 
-##Screenshots
+## Screenshots
 ![Welcome Screen](https://raw.githubusercontent.com/rishabhrkaushik/Cube-Runner/master/Screenshots/1.%20Welcome.png)
 ![Level](https://raw.githubusercontent.com/rishabhrkaushik/Cube-Runner/master/Screenshots/2.%20Level.png)
-![Credits]](https://raw.githubusercontent.com/rishabhrkaushik/Cube-Runner/master/Screenshots/3.%20Credits.png)
+![Credits](https://raw.githubusercontent.com/rishabhrkaushik/Cube-Runner/master/Screenshots/3.%20Credits.png)
